@@ -780,7 +780,7 @@ img { max-width: 100%; height: auto; display: block; }
   justify-content: center;
   gap: 1rem;
 }
-.footer__inner img { opacity: 0.85; height: 36px; width: auto; filter: brightness(0) invert(1); }
+.footer__inner img { opacity: 0.85; height: 36px; width: auto; filter: brightness(0); }
 .footer__inner p {
   font-size: 0.72rem;
   color: var(--gray);
