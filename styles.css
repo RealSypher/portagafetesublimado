@@ -379,6 +379,7 @@ img { max-width: 100%; height: auto; display: block; }
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 }
 .product-row__num {
   font-size: 5rem;
