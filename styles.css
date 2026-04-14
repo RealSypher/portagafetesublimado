@@ -349,7 +349,7 @@ img { max-width: 100%; height: auto; display: block; }
 .product-row {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  min-height: 70vh;
+  min-height: 50vh;
   background: var(--white);
 }
 .product-row--reverse {
@@ -360,7 +360,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .product-row__img {
   overflow: hidden;
-  height: 70vh;
+  height: 50vh;
   position: relative;
 }
 .product-row__img img {
