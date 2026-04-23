@@ -55,12 +55,15 @@
       <img src="img/logo.webp" alt="Hinchaz" width="120" height="40">
     </a>
     <div class="nav__links" id="navLinks">
-      <a href="#productos">Productos</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#proceso">Proceso</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#productos" data-i18n="nav.products">Productos</a>
+      <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+      <a href="#proceso" data-i18n="nav.process">Proceso</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
     </div>
-    <a href="https://wa.me/5218181610677?text=Quiero%20cotizar%20portagafetes" target="_blank" rel="noopener" class="nav__cta">COTIZAR</a>
+    <div class="nav__right">
+      <button class="nav__lang" id="navLang" data-i18n="lang.toggle" data-i18n-aria-label="lang.aria" aria-label="Cambiar idioma">EN</button>
+      <a href="https://wa.me/5218181610677?text=Quiero%20cotizar%20portagafetes" target="_blank" rel="noopener" class="nav__cta" data-i18n="nav.cta">COTIZAR</a>
+    </div>
     <button class="nav__burger" id="navBurger" aria-label="Menu">
       <span></span><span></span>
     </button>
@@ -74,12 +77,12 @@
       </video>
     </div>
     <div class="hero__content">
-      <p class="hero__tag">FABRICANTES &mdash; MONTERREY, MÉXICO</p>
-      <h1><span class="hero__line1">PORTAGAFETES</span><span class="hero__line2">SUBLIMADOS.</span></h1>
-      <p class="hero__sub">Impresión full color de alta definición.<br>Tu marca en cada cuello del país.</p>
+      <p class="hero__tag" data-i18n="hero.tag">FABRICANTES &mdash; MONTERREY, MÉXICO</p>
+      <h1><span class="hero__line1" data-i18n="hero.h1.line1">PORTAGAFETES</span><span class="hero__line2" data-i18n="hero.h1.line2">SUBLIMADOS.</span></h1>
+      <p class="hero__sub" data-i18n-html="hero.sub">Impresión full color de alta definición.<br>Tu marca en cada cuello del país.</p>
       <div class="hero__btns">
-        <a href="#contacto" class="btn">COTIZAR</a>
-        <a href="#productos" class="btn btn--ghost">EXPLORAR</a>
+        <a href="#contacto" class="btn" data-i18n="hero.cta.primary">COTIZAR</a>
+        <a href="#productos" class="btn btn--ghost" data-i18n="hero.cta.secondary">EXPLORAR</a>
       </div>
     </div>
   </section>
@@ -87,52 +90,75 @@
   <!-- MARQUEE -->
   <div class="ticker">
     <div class="ticker__track">
-      <span>SUBLIMACIÓN</span><span>LANYARDS</span><span>PORTAGAFETES</span><span>PERSONALIZACIÓN</span><span>ALTA DEFINICIÓN</span><span>SERVICIO EXPRESS</span>
-      <span>SUBLIMACIÓN</span><span>LANYARDS</span><span>PORTAGAFETES</span><span>PERSONALIZACIÓN</span><span>ALTA DEFINICIÓN</span><span>SERVICIO EXPRESS</span>
-      <span>SUBLIMACIÓN</span><span>LANYARDS</span><span>PORTAGAFETES</span><span>PERSONALIZACIÓN</span><span>ALTA DEFINICIÓN</span><span>SERVICIO EXPRESS</span>
-      <span>SUBLIMACIÓN</span><span>LANYARDS</span><span>PORTAGAFETES</span><span>PERSONALIZACIÓN</span><span>ALTA DEFINICIÓN</span><span>SERVICIO EXPRESS</span>
+      <span data-i18n="ticker.sublimation">SUBLIMACIÓN</span><span data-i18n="ticker.lanyards">LANYARDS</span><span data-i18n="ticker.lanyardsAlt">PORTAGAFETES</span><span data-i18n="ticker.custom">PERSONALIZACIÓN</span><span data-i18n="ticker.hd">ALTA DEFINICIÓN</span><span data-i18n="ticker.express">SERVICIO EXPRESS</span>
+      <span data-i18n="ticker.sublimation">SUBLIMACIÓN</span><span data-i18n="ticker.lanyards">LANYARDS</span><span data-i18n="ticker.lanyardsAlt">PORTAGAFETES</span><span data-i18n="ticker.custom">PERSONALIZACIÓN</span><span data-i18n="ticker.hd">ALTA DEFINICIÓN</span><span data-i18n="ticker.express">SERVICIO EXPRESS</span>
+      <span data-i18n="ticker.sublimation">SUBLIMACIÓN</span><span data-i18n="ticker.lanyards">LANYARDS</span><span data-i18n="ticker.lanyardsAlt">PORTAGAFETES</span><span data-i18n="ticker.custom">PERSONALIZACIÓN</span><span data-i18n="ticker.hd">ALTA DEFINICIÓN</span><span data-i18n="ticker.express">SERVICIO EXPRESS</span>
+      <span data-i18n="ticker.sublimation">SUBLIMACIÓN</span><span data-i18n="ticker.lanyards">LANYARDS</span><span data-i18n="ticker.lanyardsAlt">PORTAGAFETES</span><span data-i18n="ticker.custom">PERSONALIZACIÓN</span><span data-i18n="ticker.hd">ALTA DEFINICIÓN</span><span data-i18n="ticker.express">SERVICIO EXPRESS</span>
     </div>
   </div>
+
+  <!-- MARCAS / CLIENTES -->
+  <section class="marcas" id="marcas">
+    <div class="marcas__header reveal">
+      <p class="label" data-i18n="marcas.label">CLIENTES</p>
+      <h2 data-i18n-html="marcas.h2">MARCAS QUE<br>CONFÍAN EN<br><span>HINCHAZ.</span></h2>
+      <p class="marcas__intro" data-i18n="marcas.intro">Hemos producido promocionales textiles —etiquetas, pulseras, parches, lanyards y cintas— para casas de moda, marcas deportivas, corporativos y eventos institucionales. Estas son algunas.</p>
+    </div>
+    <div class="marcas__grid">
+      <div class="marca reveal"><img src="img/marcas/nestle.webp" alt="Nestlé" loading="lazy"></div>
+      <div class="marca reveal"><img src="img/marcas/nescafe.webp" alt="Nescafé" loading="lazy"></div>
+      <div class="marca reveal"><img src="img/marcas/spring-air.webp" alt="Spring Air" loading="lazy"></div>
+      <div class="marca reveal"><img src="img/marcas/monterrey.webp" alt="Club de Fútbol Monterrey" loading="lazy"></div>
+      <div class="marca reveal"><img src="img/marcas/cruz-roja.webp" alt="Cruz Roja Mexicana" loading="lazy"></div>
+      <div class="marca reveal"><img src="img/marcas/oxxo-gas.webp" alt="Oxxo Gas" loading="lazy"></div>
+      <div class="marca reveal"><img src="img/marcas/truper.webp" alt="Truper" loading="lazy"></div>
+      <div class="marca reveal"><img src="img/marcas/yoplait.webp" alt="Yoplait" loading="lazy"></div>
+      <div class="marca reveal"><img src="img/marcas/aba-sport.webp" alt="ABA Sport" loading="lazy"></div>
+      <div class="marca reveal"><img src="img/marcas/emma.webp" alt="Emma" loading="lazy"></div>
+      <div class="marca reveal"><img src="img/marcas/tacos-atarantados.webp" alt="Tacos Atarantados" loading="lazy"></div>
+      <div class="marca reveal"><img src="img/marcas/hdx.webp" alt="HDX" loading="lazy"></div>
+    </div>
+  </section>
 
   <!-- VARIACIONES -->
   <section class="variaciones" id="variaciones">
     <div class="variaciones__header reveal">
-      <p class="label">VARIACIONES</p>
-      <h2>COMBINA LOS<br>HERRAJES QUE<br><span>NECESITES.</span></h2>
-      <p class="variaciones__intro">Cada portagafete se arma a medida. Elige la combinación de herrajes que mejor se adapte a tu uso.</p>
+      <p class="label" data-i18n="var.label">VARIACIONES</p>
+      <h2 data-i18n-html="var.h2">COMBINA LOS<br>HERRAJES QUE<br><span>NECESITES.</span></h2>
+      <p class="variaciones__intro" data-i18n="var.intro">Cada portagafete se arma a medida. Elige la combinación de herrajes que mejor se adapte a tu uso.</p>
     </div>
     <div class="variaciones__grid">
       <figure class="variacion reveal">
         <img src="img/variaciones/cocacola.webp" alt="" loading="lazy">
-        <figcaption>Destapador Cuadrado &middot; Bandola Normal</figcaption>
+        <figcaption data-i18n="var.f1">Destapador Cuadrado &middot; Bandola Normal</figcaption>
       </figure>
       <figure class="variacion reveal">
         <img src="img/variaciones/dhl.webp" alt="" loading="lazy">
-        <figcaption>Hebilla Antiahorcamiento &middot; Bandola Perico &middot; Porta USB</figcaption>
+        <figcaption data-i18n="var.f2">Hebilla Antiahorcamiento &middot; Bandola Perico &middot; Porta USB</figcaption>
       </figure>
       <figure class="variacion reveal">
         <img src="img/variaciones/fedex.webp" alt="" loading="lazy">
-        <figcaption>Bandola Normal</figcaption>
+        <figcaption data-i18n="var.f3">Bandola Normal</figcaption>
       </figure>
       <figure class="variacion reveal">
         <img src="img/variaciones/hm.webp" alt="" loading="lazy">
-        <figcaption>Hebilla Antiahorcamiento &middot; Hebilla Samsonite &middot; Bandola Perico &middot; Porta USB</figcaption>
+        <figcaption data-i18n="var.f4">Hebilla Antiahorcamiento &middot; Hebilla Samsonite &middot; Bandola Perico &middot; Porta USB</figcaption>
       </figure>
       <figure class="variacion reveal">
         <img src="img/variaciones/loreal.webp" alt="" loading="lazy">
-        <figcaption>Bandola Perico</figcaption>
+        <figcaption data-i18n="var.f5">Bandola Perico</figcaption>
       </figure>
       <figure class="variacion reveal">
         <img src="img/variaciones/heineken.webp" alt="" loading="lazy">
-        <figcaption>Hebilla Samsonite &middot; Destapador Bandola</figcaption>
+        <figcaption data-i18n="var.f6">Hebilla Samsonite &middot; Destapador Bandola</figcaption>
       </figure>
       <figure class="variacion reveal">
         <img src="img/variaciones/jhon-deer.webp" alt="" loading="lazy">
-        <figcaption>Hebilla Samsonite &middot; Bandola Perico</figcaption>
+        <figcaption data-i18n="var.f7">Hebilla Samsonite &middot; Bandola Perico</figcaption>
       </figure>
       <figure class="variacion reveal">
         <img src="img/variaciones/tecate.webp" alt="" loading="lazy">
-        <figcaption>Destapador Cuadrado &middot; Bandola Perico</figcaption>
+        <figcaption data-i18n="var.f8">Destapador Cuadrado &middot; Bandola Perico</figcaption>
       </figure>
     </div>
   </section>
@@ -140,16 +166,16 @@
   <!-- INTRO — horizontal split -->
   <section class="intro" id="nosotros">
     <div class="intro__left reveal">
-      <p class="label">DESDE 2006</p>
-      <h2>LA CINTA QUE<br>LLEVA TU<br><span>MARCA.</span></h2>
+      <p class="label" data-i18n="intro.label">DESDE 2006</p>
+      <h2 data-i18n-html="intro.h2">LA CINTA QUE<br>LLEVA TU<br><span>MARCA.</span></h2>
     </div>
     <div class="intro__right reveal">
-      <p>Somos <strong>Textiles Hinchaz</strong>. Fabricamos portagafetes sublimados con tecnología de impresión de alta definición: colores vivos, durabilidad industrial y acabado profesional.</p>
-      <p>Cada lanyard es una pieza de comunicación. No entregamos genéricos &mdash; creamos herramientas de branding que identifican, conectan y posicionan tu marca.</p>
+      <p data-i18n-html="intro.p1">Somos <strong>Textiles Hinchaz</strong>. Fabricamos portagafetes sublimados con tecnología de impresión de alta definición: colores vivos, durabilidad industrial y acabado profesional.</p>
+      <p data-i18n="intro.p2">Cada lanyard es una pieza de comunicación. No entregamos genéricos — creamos herramientas de branding que identifican, conectan y posicionan tu marca.</p>
       <div class="intro__numbers">
-        <div><strong>2006</strong><span>Fundación</span></div>
-        <div><strong>18+</strong><span>Años</span></div>
-        <div><strong>5 días</strong><span>Entrega</span></div>
+        <div><strong>2006</strong><span data-i18n="intro.founded">Fundación</span></div>
+        <div><strong>18+</strong><span data-i18n="intro.years">Años</span></div>
+        <div><strong data-i18n="intro.deliveryNum">5 días</strong><span data-i18n="intro.delivery">Entrega</span></div>
       </div>
     </div>
   </section>
@@ -162,9 +188,9 @@
       </div>
       <div class="product-row__content">
         <span class="product-row__num">01</span>
-        <h3>SUBLIMADOS</h3>
-        <p>Impresión full color a 1440 DPI. Sin límite de colores. Tu diseño exacto, sin compromisos. Colores vivos que no se destiñen con el uso ni el lavado.</p>
-        <a href="#contacto" class="btn">COTIZAR</a>
+        <h3 data-i18n="prod.r1.title">SUBLIMADOS</h3>
+        <p data-i18n="prod.r1.text">Impresión full color a 1440 DPI. Sin límite de colores. Tu diseño exacto, sin compromisos. Colores vivos que no se destiñen con el uso ni el lavado.</p>
+        <a href="#contacto" class="btn" data-i18n="prod.r1.cta">COTIZAR</a>
       </div>
     </div>
 
@@ -174,9 +200,9 @@
       </div>
       <div class="product-row__content">
         <span class="product-row__num">02</span>
-        <h3>BORDADOS</h3>
-        <p>Bordado de alta calidad integrado en la cinta. Textura premium, resistencia industrial. Ideal para uso corporativo diario y eventos de larga duración.</p>
-        <a href="#contacto" class="btn">COTIZAR</a>
+        <h3 data-i18n="prod.r2.title">BORDADOS</h3>
+        <p data-i18n="prod.r2.text">Bordado de alta calidad integrado en la cinta. Textura premium, resistencia industrial. Ideal para uso corporativo diario y eventos de larga duración.</p>
+        <a href="#contacto" class="btn" data-i18n="prod.r2.cta">COTIZAR</a>
       </div>
     </div>
   </section>
@@ -184,36 +210,36 @@
   <!-- STATEMENT -->
   <section class="statement" id="statement">
     <h2 class="statement__text">
-      <span data-w="1">TU</span>
-      <span data-w="2">LOGO</span>
-      <span data-w="3">EN</span>
-      <span data-w="4">CADA</span>
-      <span data-w="5" class="statement__red">CUELLO</span>
-      <span data-w="6">DEL</span>
-      <span data-w="7" class="statement__red">PAÍS.</span>
+      <span data-w="1" data-i18n="statement.w1">TU</span>
+      <span data-w="2" data-i18n="statement.w2">LOGO</span>
+      <span data-w="3" data-i18n="statement.w3">EN</span>
+      <span data-w="4" data-i18n="statement.w4">CADA</span>
+      <span data-w="5" class="statement__red" data-i18n="statement.w5">CUELLO</span>
+      <span data-w="6" data-i18n="statement.w6">DEL</span>
+      <span data-w="7" class="statement__red" data-i18n="statement.w7">PAÍS.</span>
     </h2>
   </section>
 
   <!-- USES — icon-less grid -->
   <section class="uses">
     <div class="uses__inner">
-      <h2 class="uses__heading reveal">¿PARA QUÉ<br>SE <span>USAN?</span></h2>
+      <h2 class="uses__heading reveal" data-i18n-html="uses.h2">¿PARA QUÉ<br>SE <span>USAN?</span></h2>
       <div class="uses__grid">
         <div class="uses__item reveal">
-          <strong>01 — EVENTOS</strong>
-          <p>Conferencias, expos, conciertos y ferias. Identifica a tu equipo y asistentes con estilo.</p>
+          <strong data-i18n="uses.u1.title">01 — EVENTOS</strong>
+          <p data-i18n="uses.u1.text">Conferencias, expos, conciertos y ferias. Identifica a tu equipo y asistentes con estilo.</p>
         </div>
         <div class="uses__item reveal">
-          <strong>02 — CORPORATIVO</strong>
-          <p>Credenciales de empresa, accesos y control de personal. Imagen profesional diaria.</p>
+          <strong data-i18n="uses.u2.title">02 — CORPORATIVO</strong>
+          <p data-i18n="uses.u2.text">Credenciales de empresa, accesos y control de personal. Imagen profesional diaria.</p>
         </div>
         <div class="uses__item reveal">
-          <strong>03 — MARKETING</strong>
-          <p>Tu logo en el cuello de miles. Publicidad ambulante que trabaja las 24 horas por tu marca.</p>
+          <strong data-i18n="uses.u3.title">03 — MARKETING</strong>
+          <p data-i18n="uses.u3.text">Tu logo en el cuello de miles. Publicidad ambulante que trabaja las 24 horas por tu marca.</p>
         </div>
         <div class="uses__item reveal">
-          <strong>04 — INSTITUCIONAL</strong>
-          <p>Escuelas, hospitales, gobierno. Identificación segura y profesional para cualquier institución.</p>
+          <strong data-i18n="uses.u4.title">04 — INSTITUCIONAL</strong>
+          <p data-i18n="uses.u4.text">Escuelas, hospitales, gobierno. Identificación segura y profesional para cualquier institución.</p>
         </div>
       </div>
     </div>
@@ -223,47 +249,47 @@
   <section class="specs">
     <div class="specs__inner">
       <div class="specs__card reveal">
-        <strong>MATERIAL</strong>
-        <p>Poliéster de alta densidad con cinta Cintelastic. Resistente al uso diario y lavado.</p>
+        <strong data-i18n="specs.s1.title">MATERIAL</strong>
+        <p data-i18n="specs.s1.text">Poliéster de alta densidad con cinta Cintelastic. Resistente al uso diario y lavado.</p>
       </div>
       <div class="specs__card reveal">
-        <strong>IMPRESIÓN</strong>
-        <p>Sublimación full color a 1440 DPI. Sin límite de colores. Tu diseño exacto.</p>
+        <strong data-i18n="specs.s2.title">IMPRESIÓN</strong>
+        <p data-i18n="specs.s2.text">Sublimación full color a 1440 DPI. Sin límite de colores. Tu diseño exacto.</p>
       </div>
       <div class="specs__card reveal">
-        <strong>MEDIDAS</strong>
-        <p>Ancho: 2 cm y 2.5 cm. Largo: 45 cm y 90 cm. Medidas especiales disponibles.</p>
+        <strong data-i18n="specs.s3.title">MEDIDAS</strong>
+        <p data-i18n="specs.s3.text">Ancho: 2 cm y 2.5 cm. Largo: 45 cm y 90 cm. Medidas especiales disponibles.</p>
       </div>
       <div class="specs__card reveal">
-        <strong>ACCESORIOS</strong>
-        <p>Gancho giratorio, clip de seguridad, broche de presión o mosquetón. Tú eliges.</p>
+        <strong data-i18n="specs.s4.title">ACCESORIOS</strong>
+        <p data-i18n="specs.s4.text">Gancho giratorio, clip de seguridad, broche de presión o mosquetón. Tú eliges.</p>
       </div>
     </div>
   </section>
 
   <!-- PROCESS — numbered timeline -->
   <section class="process" id="proceso">
-    <h2 class="section-title reveal">CÓMO FUNCIONA</h2>
+    <h2 class="section-title reveal" data-i18n="process.title">CÓMO FUNCIONA</h2>
     <div class="process__steps">
       <div class="process__step reveal">
         <span class="process__num">01</span>
-        <h3>ENVÍAS TU DISEÑO</h3>
-        <p>WhatsApp, email o llamada. Mándanos tu logo y te armamos la muestra digital.</p>
+        <h3 data-i18n="process.s1.title">ENVÍAS TU DISEÑO</h3>
+        <p data-i18n="process.s1.text">WhatsApp, email o llamada. Mándanos tu logo y te armamos la muestra digital.</p>
       </div>
       <div class="process__step reveal">
         <span class="process__num">02</span>
-        <h3>APRUEBAS LA MUESTRA</h3>
-        <p>Te enviamos render digital para tu aprobación. Nada se produce sin tu OK.</p>
+        <h3 data-i18n="process.s2.title">APRUEBAS LA MUESTRA</h3>
+        <p data-i18n="process.s2.text">Te enviamos render digital para tu aprobación. Nada se produce sin tu OK.</p>
       </div>
       <div class="process__step reveal">
         <span class="process__num">03</span>
-        <h3>PRODUCCIÓN</h3>
-        <p>Sublimación de alta definición en nuestra planta de Monterrey. Control de calidad pieza por pieza.</p>
+        <h3 data-i18n="process.s3.title">PRODUCCIÓN</h3>
+        <p data-i18n="process.s3.text">Sublimación de alta definición en nuestra planta de Monterrey. Control de calidad pieza por pieza.</p>
       </div>
       <div class="process__step reveal">
         <span class="process__num">04</span>
-        <h3>ENTREGA</h3>
-        <p>5 días hábiles máximo. Envíos a toda la República Mexicana.</p>
+        <h3 data-i18n="process.s4.title">ENTREGA</h3>
+        <p data-i18n="process.s4.text">5 días hábiles máximo. Envíos a toda la República Mexicana.</p>
       </div>
     </div>
   </section>
@@ -275,24 +301,24 @@
     </div>
     <div class="cta__inner reveal">
       <div class="cta__content">
-        <p class="label">SERVICIO SUPER EXPRESS</p>
-        <h2>ENTREGA<br>EL MISMO DÍA.</h2>
-        <p class="cta__sub">Las urgencias no avisan. Solicita entrega el mismo día al realizar tu pedido y nosotros nos encargamos del resto.</p>
+        <p class="label" data-i18n="cta.label">SERVICIO SUPER EXPRESS</p>
+        <h2 data-i18n-html="cta.h2">ENTREGA<br>EL MISMO DÍA.</h2>
+        <p class="cta__sub" data-i18n="cta.sub">Las urgencias no avisan. Solicita entrega el mismo día al realizar tu pedido y nosotros nos encargamos del resto.</p>
       </div>
       <div class="cta__details">
         <div class="cta__detail">
           <strong>01</strong>
-          <p>Realiza tu pedido por WhatsApp o teléfono</p>
+          <p data-i18n="cta.d1">Realiza tu pedido por WhatsApp o teléfono</p>
         </div>
         <div class="cta__detail">
           <strong>02</strong>
-          <p>Solicita el servicio Super Express al confirmar</p>
+          <p data-i18n="cta.d2">Solicita el servicio Super Express al confirmar</p>
         </div>
         <div class="cta__detail">
           <strong>03</strong>
-          <p>Recibe tu pedido el mismo día</p>
+          <p data-i18n="cta.d3">Recibe tu pedido el mismo día</p>
         </div>
-        <a href="https://wa.me/5218181610677?text=Hola%2C%20necesito%20servicio%20express%20de%20portagafetes" target="_blank" rel="noopener" class="btn btn--dark">SOLICITAR EXPRESS</a>
+        <a href="https://wa.me/5218181610677?text=Hola%2C%20necesito%20servicio%20express%20de%20portagafetes" target="_blank" rel="noopener" class="btn btn--dark" data-i18n="cta.btn">SOLICITAR EXPRESS</a>
       </div>
     </div>
   </section>
@@ -300,36 +326,36 @@
   <!-- CONTACTO -->
   <section class="contact" id="contacto">
     <div class="contact__left">
-      <h2 class="reveal">COTIZA<br>AHORA.</h2>
-      <p class="contact__intro reveal">Sin compromiso. Sin cantidades mínimas ridículas. Cuéntanos qué necesitas y te respondemos el mismo día.</p>
+      <h2 class="reveal" data-i18n-html="contact.h2">COTIZA<br>AHORA.</h2>
+      <p class="contact__intro reveal" data-i18n="contact.intro">Sin compromiso. Sin cantidades mínimas ridículas. Cuéntanos qué necesitas y te respondemos el mismo día.</p>
 
       <div class="contact__data reveal">
         <div>
-          <strong>Planta</strong>
+          <strong data-i18n="contact.plant">Planta</strong>
           <a href="tel:+528183406939">(81) 8340-6939</a>
         </div>
         <div>
-          <strong>Celular</strong>
+          <strong data-i18n="contact.cell">Celular</strong>
           <a href="tel:+528181610677">(81) 8161-0677</a>
         </div>
         <div>
-          <strong>WhatsApp</strong>
+          <strong data-i18n="contact.whatsapp">WhatsApp</strong>
           <a href="https://wa.me/5218181610677" target="_blank" rel="noopener">(81) 8161-0677</a>
         </div>
         <div>
-          <strong>Email</strong>
+          <strong data-i18n="contact.email">Email</strong>
           <a href="mailto:ventas@hinchaz.com">ventas@hinchaz.com</a>
         </div>
       </div>
 
       <div class="contact__address reveal">
-        <strong>Ubicación</strong>
-        <p>Tacuba 1654, Centro<br>64000 Monterrey, N.L., México</p>
+        <strong data-i18n="contact.location">Ubicación</strong>
+        <p data-i18n-html="contact.address">Tacuba 1654, Centro<br>64000 Monterrey, N.L., México</p>
       </div>
 
       <div class="contact__hours reveal">
-        <strong>Horario</strong>
-        <p>Lunes a Viernes, 10:00 a 17:00</p>
+        <strong data-i18n="contact.hours">Horario</strong>
+        <p data-i18n="contact.hoursText">Lunes a Viernes, 10:00 a 17:00</p>
       </div>
 
       <div class="contact__social reveal">
@@ -339,21 +365,21 @@
     </div>
 
     <form class="contact__form reveal" id="contactForm" novalidate>
-      <input type="text" name="nombre" placeholder="NOMBRE *" required>
-      <input type="email" name="email" placeholder="EMAIL *" required>
-      <input type="tel" name="telefono" placeholder="TELÉFONO">
+      <input type="text" name="nombre" placeholder="NOMBRE *" data-i18n-placeholder="form.name" required>
+      <input type="email" name="email" placeholder="EMAIL *" data-i18n-placeholder="form.email" required>
+      <input type="tel" name="telefono" placeholder="TELÉFONO" data-i18n-placeholder="form.phone">
       <select name="producto">
-        <option value="">TIPO DE PORTAGAFETE</option>
-        <option value="sublimado">SUBLIMADO</option>
-        <option value="tejido">TEJIDO</option>
-        <option value="liso">LISO / SIN IMPRESIÓN</option>
-        <option value="otro">OTRO</option>
+        <option value="" data-i18n="form.type">TIPO DE PORTAGAFETE</option>
+        <option value="sublimado" data-i18n="form.type.sub">SUBLIMADO</option>
+        <option value="tejido" data-i18n="form.type.woven">TEJIDO</option>
+        <option value="liso" data-i18n="form.type.plain">LISO / SIN IMPRESIÓN</option>
+        <option value="otro" data-i18n="form.type.other">OTRO</option>
       </select>
-      <textarea name="mensaje" rows="4" placeholder="CUÉNTANOS QUÉ NECESITAS *" required></textarea>
+      <textarea name="mensaje" rows="4" placeholder="CUÉNTANOS QUÉ NECESITAS *" data-i18n-placeholder="form.message" required></textarea>
       <div style="position:absolute;left:-9999px" aria-hidden="true">
         <input type="text" name="website" tabindex="-1" autocomplete="off">
       </div>
-      <button type="submit" class="btn btn--full">ENVIAR</button>
+      <button type="submit" class="btn btn--full" data-i18n="form.submit">ENVIAR</button>
     </form>
   </section>
 
@@ -361,7 +387,7 @@
   <footer class="footer">
     <div class="footer__inner">
       <img src="img/logo.webp" alt="Hinchaz" width="90" height="30">
-      <p>&copy; 2006&ndash;2026 Textiles Hinchaz, S.A. de C.V. &mdash; Monterrey, N.L., México</p>
+      <p data-i18n="footer.copy">&copy; 2006&ndash;2026 Textiles Hinchaz, S.A. de C.V. &mdash; Monterrey, N.L., México</p>
     </div>
   </footer>
 
